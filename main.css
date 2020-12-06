@@ -3,3 +3,21 @@
     padding: 0px;
     box-sizing: border-box;
 }
+#mobile-header{
+  height: 60px;
+  width: 100%;
+  background-color: grey;
+}
+#logo{
+  width: 60px;
+  height: auto;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+#bars{
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+}
