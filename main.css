@@ -3,21 +3,61 @@
     padding: 0px;
     box-sizing: border-box;
 }
-#mobile-header{
-  height: 60px;
+/* top hader*/
+#top-header{
+  height: 40px;
   width: 100%;
-  background-color: grey;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+  
+}
+#header-info{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  
+}
+#tel, #mail{
+  padding-left: 10px;
+
+}#tw{
+  color: blue;
+  font-size: 20px;
+}
+#tw-div{
+  padding-left: 90px;
+}
+#yt{
+  color:red;
+  font-size: 20px;
 }
 #logo{
-  width: 60px;
+  margin-left: 5%;
+}
+#img-logo{
+  width: 90px;
   height: auto;
-  margin-left: 40%;
-  margin-top: 5%;
+  padding-top: 5px;
+}
+.fa-envelope{
+  color: rgb(197, 61, 61);
+  font-size: 20px;
 }
 #bars{
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 1.5rem;
+  display: none;
+}
+/* end of top hader*/
+
+/*mobile*/
+@media only screen and (max-width: 768px) {
+  #bars{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+  }
 }
