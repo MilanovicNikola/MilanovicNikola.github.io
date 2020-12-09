@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+
   <header>
+    <!--top header-->
     <div id= "top-header">
       <div id = "logo">
-        <img id="img-logo" alt="iva Procesna Oprema logo" src="images/ivaLogo.png">
+        <img class="img-logo" alt="iva Procesna Oprema logo" src="images/ivaLogo.png">
       </div>
     <div id="header-info">
       <div>
@@ -35,10 +36,87 @@
       <div id="bars"><i class="fas fa-bars"></i></div>
     </div>
   </div>
+  <!-- end of top header-->
+  <!-- nav -->
     <nav>
+      <ul>
+        <div class="link">
+          <i class="fas fa-home"></i>
+          <li><a href="index.html">Home</a></li>
+        </div>
+       <div class="link">
+        <i class="fas fa-microchip"></i>
+        <li><a href="product.htm">Product</a></li>
+       </div>
+        <div class="link">
+          <i class="fas fa-cogs"></i>
+          <li><a href="#">Services</a></li>
+        </div>
+       <div class="link">
+        <i class="fas fa-users"></i>
+        <li><a href="#">About</a></li>
+       </div>
+        <div class="link">
+          <i class="far fa-address-book"></i>
+          <li><a href="#">Contact</a></li>
+        </div>
+        
+      </ul>
 
     </nav>
+    <!--end of nav-->
   </header>
+<body>
+   <!--background video--> 
+  <div class="video-container">
+    <video class="video-bg" autoplay muted loop>
+      <source src="videos/Ivauvod1.mp4" type="video/mp4"> 
+    </video>
+    <div class="cards video-text">
+      <div class="card visible">
+        <h2>Tumbler screening machines</h2>
+        <p>Tumbler screening machines diameter 1600
+           for bulk material grading in 
+           (minerals, plastics, foods, pharmaceuticals...)
+           all industrial sectors.</p>
+           <img class="img-logo" src="images/ivaLogo.png">
+      </div>
+      <div class="card">
+        <h2>Silo</h2>
+        <p>produce silo cells with the capacity of 30 ton
+          cell to cells with the capacity of 500 tons/cell.</p>
+          <img class="img-logo" src="images/ivaLogo.png">
+      </div>
+      <div class="card">
+        <h2>Keep your load dry!</h2>
+        <p>
+          Pallets packed by stretch hoods are
+           absolutely waterproof: the foil covers the
+            entire pallet and goes until under the pallet.Stretch hood packaging
+           technology means improved packaging quality!</p>
+           <img class="img-logo" src="images/ivaLogo.png">
+      </div>
+    </div>
+  </div>
+  <!--end of background video-->
+
+  <div class="container">
+    <div class="about-us">
+        
+            <h1 class="text-center">Who we are</h1>
+            <p>1987 can be considered as the beginning of IVA that was initially
+workshop dealing with manufacturing and processing of metal
+parts for non-metal industries within the scope of family business. 2007 is the beginning of IVA the way it is well known today still
+remaining within the family</p>
+      
+       <p>Today IVA is engaged in projecting, manufacturing and assembling
+the newest technology plants, lines and machines used in
+construction industries, mostly.
+Turn key system applied, covering entire process from idea to final
+putting into operation</p>
+        </div>
+    </div>
+    
 <script src="main.js"></script>
 </body>
 </html>
