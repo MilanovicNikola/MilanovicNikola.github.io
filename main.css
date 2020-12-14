@@ -222,13 +222,159 @@ position: relative;
  
   z-index: 1;
 }
+/*Turn key section*/
+.turn-key-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 90px 30px;
+  grid-auto-rows: 500px;
+  grid-gap: 4.5rem;
+}
+.turn-key-left{
+  display: grid;
+  grid-gap: 1rem;
+  text-align: center;
+  align-items: center;
+
+}
+.turn-key-left > div:nth-child(1){
+  
+  background-color: rgb(230, 116, 116);
+  transition: 1s;
+}
+.turn-key-left > div:nth-child(1) > h3{
+  
+  color: white;
+  padding: 30px;
+}
+.show{
+  background-color: rgb(134, 87, 87);
+  border-radius: 10%;
+  transition: 2s;
+  transform: translateX(-100%);
+}
+.show1{
+  transform: translateX(0);
+}
+.turn-key-left>div>p{
+  color: white;
+  padding: 30px;
+}
+.turn-key-right img{
+  width: 90%;
+  height: 100%;
+  padding-left: 40px;
+}
+
+/*Footer*/
+.footer-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #292c2f;
+  color:white;
+}
+.footer-container .footer-center i{
+  background-color:#33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 20px;
+  vertical-align: middle;
+}
+.footer-container .footer-center
+p, span{
+  padding: 20px 0;
+}
+.flex{
+  display: flex;
+  margin: 10px;
+  
+}
+.copyright{
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+}
+.footer-left{
+  margin-top: 20px;
+}
+.footer-left div{
+  height: 30px;
+  width: 50%;
+  margin-left: 100px;
+  text-align:left;
+  padding-top:7px;
+  
+}/*.footer-left>div:nth-child(even){
+  background-color: rgb(59, 52, 52);
+}*/
+.footer-left>div:nth-child(1){
+  padding-bottom: 40px;
+}
+.footer-left h4{
+ margin-bottom: 110px;
+  color: rgb(221,0,0);
+  text-transform: uppercase;
+}
+.footer-right{
+  margin-top: 30px;
+  margin-left: 50px;
+ 
+}
+
+
+.footer-social{
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 60px;
+  
+}
+.footer-twitter{
+ 
+ 
+  
+ 
+}
+.footer-twitter i{
+  color: blue;
+  font-size: 2.5rem;
+}
+.footer-youtube{
+  
+  
+  
+}
+
+.footer-youtube i{
+  color: red;
+  font-size: 2.5rem;
+}
+.footer-facebook{
+  
+}
+
+.footer-facebook i{
+  color: rgb(1, 1, 184);
+  font-size: 2.5rem;
+  
+}
 
 /*mobile*/
 @media only screen and (max-width: 768px) {
   #bars{
     display: block;
     position: absolute;
-    top: 20px;
+    top: 2px;
     right: 20px;
     font-size: 1.5rem;
   }
