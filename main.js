@@ -18,6 +18,18 @@ function changeCard(){
     }
   };
     
+
+  //nav mobile//
+  function navSlide(){
+    const bars = document.querySelector('#bars');
+    const nav =document.querySelector('.nav-links');
+
+    bars.addEventListener('click', function(){
+      nav.classList.toggle('nav-links-active');
+    });
+  };
+  
+  navSlide();
   
 
   

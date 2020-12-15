@@ -346,30 +346,99 @@ p, span{
   height: 90%;
 }
 .footer-twitter i{
-  color: blue;
+  color: rgb(78, 78, 90);
   font-size: 2.5rem;
 }
 
 
 .footer-youtube i{
-  color: red;
+  color: rgb(121, 109, 109);
   font-size: 2.5rem;
 }
 
 .footer-facebook i{
-  color: rgb(1, 1, 184);
+  color: rgb(160, 143, 143);
   font-size: 2.5rem;
   
 }
 
 /*mobile*/
 @media only screen and (max-width: 768px) {
+ body{
+   overflow-x: hidden;
+ }
+  #top-header{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    
+  }
   #bars{
     display: block;
     position: absolute;
-    top: 2px;
+    top: 5px;
     right: 20px;
     font-size: 1.5rem;
+    cursor: pointer;
+  }
+  nav{
+    overflow: hidden;
+  }
+ 
+  .nav-links{
+    display: block;
+    justify-content: space-between;
+    background-color: rgb(56,59,67);
+    overflow-x: hidden;
+    transform: translateX(100%);
+    z-index: 1;
+    
+    
+  }
+  .nav-links-active{
+    transform: translateX(0%);
+    transition: 0.5s ease-in-out;
+  }
+  nav ul li{
+    
+    padding-right: 100px;
+    list-style: none;
+    padding-top: 20px;
+    
+  }
+  nav ul li a{
+    color:white;
+    text-decoration: none;
+    text-align: justify;
+    text-transform: uppercase;
+    
+  }
+  nav ul li a:hover{
+    font-weight: 700;
+  }
+  .link{
+    display: flex;
+    border-right: 2px solid black;
+    height: 60px;
+    margin-left: 100px;
+    overflow-x: hidden;
+  }
+  .link > i{
+    padding-top: 20px;
+    padding-right: 20px;
+    color:rgb(156,157,161);
+  }
+  #logo{
+    margin-left: 30px;
+  }
+  .img-logo{
+    width: 90px;
+    height: auto;
+    padding-top: 5px;
   }
   .card{
     display: none;
@@ -397,20 +466,21 @@ p, span{
   .video-container{
     width: 100%;
     height: 100%;
-   
+    position: absolute;
+    top: 25px;
      
    }
   .video-bg{
     width: 100%;
     height: 100%;
-    position: relative;
-    top: 0px;
+    
   }
   .about-us{
     width: 100%;
     height: auto;
     background-color: white;
-    top: 0px;
+    position: relative;
+    top: -60px;
   }
   .section-heading{
     text-align: center;
@@ -430,13 +500,7 @@ p, span{
     ;
   }
 
-  nav ul{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(56,59,67);
-    overflow: hidden;
-    display: none;
-  }
+  
   #header-info{
     display: flex;
     justify-content: space-between;
@@ -485,20 +549,28 @@ p, span{
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 10px;
+    align-items: center;
   }
   .footer-center{
     padding-left: 0;
     
   }
   .footer-left{
-    margin-top: 20px;
-    text-align: center;
+   margin: auto;
   }
   .footer-left div{
-    height: 30px;
-    text-align: left;
-    padding-top:7px;
-    padding-left: 25%;
+    margin-top: 20px;
+    padding-left: 3rem;
+    
+  }
+  #production-portfolio h4{
+    width: 50px;
+  }
+  .footer-left div p{
+    margin: auto;
+  }
+  .footer-left div h4{
+    padding-left: 0;
   }
   .footer-social{
     margin:20px 0px;
